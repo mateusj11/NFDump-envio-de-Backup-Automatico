@@ -1,5 +1,11 @@
 #!/bin/bash
 
+case "$dia_bkp" in
+	1|2|3|4|5|6|7|8|9)
+		dia_bkp=0$dia_bkp
+		;;
+esac
+
 var_data=$dia_bkp-$var_mes-$var_ano
 	
 ###Declarando Variavel nome do arquivo
